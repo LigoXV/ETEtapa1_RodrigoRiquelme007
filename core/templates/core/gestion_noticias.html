@@ -22,7 +22,7 @@
 </head>
 <body>
   {%load static%}
-  <nav class="navbar navbar-expand-sm navbar-light fixed-top " style="background-color: #F94E4E">
+  <nav class="navbar navbar-expand-sm navbar-light  " style="background-color: #F94E4E">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -56,6 +56,38 @@
      
     </div>
   </nav>
+
+  <div class="row" style="margin-left: 10px;">
+    <h1>Mostrando Colaboradores</h1>
+  </div>
+  <table class="table" style="margin-left: 5px;" >
+    <thead>
+        <tr>
+            <th scope="col">Rut del colaborador</th>
+            <th scope="col">Nombre completo</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Email</th>     
+            <th scope="col">Pais</th>    
+            <th scope="col">Contraseña</th>         
+        </tr>
+    </thead>
+    <tbody>
+        {%for ve in colab%}
+            <tr>
+                <td>{{ve.rut}}</td>
+                <td>{{ve.nombre}}</td>
+                <td>{{ve.telefono}}</td>
+                <td>{{ve.direccion}}</td>
+                <td>{{ve.email}}</td>
+                <td>{{ve.pais}}</td>
+                <td>{{ve.contraseña}}</td>
+
+            </tr>
+        {%endfor%}
+    </tbody>
+  </table>
+    </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <footer class="footer" style="background-color: #ff3232;" >
