@@ -56,10 +56,10 @@
      
     </div>
   </nav>
-
-  <div class="row" style="margin-left: 10px;">
-    <h1>Mostrando Colaboradores</h1>
-  </div>
+  <br><br><br>
+  <div class="row jumbotron" style="margin-left: 10px;">
+    <h1 style="color: black;">Mostrando Colaboradores</h1>
+  
   <table class="table" style="margin-left: 5px;" >
     <thead>
         <tr>
@@ -82,13 +82,15 @@
                 <td>{{ve.email}}</td>
                 <td>{{ve.pais}}</td>
                 <td>{{ve.contraseña}}</td>
-
+                <td><a href="{% url 'form_mod' ve.rut%}" class="btn btn-primary">Modificar</a></td>
+                <td><a href="{% url 'form_del_colab' ve.rut%}" class="btn btn-danger">Eliminar</a></td>
             </tr>
         {%endfor%}
     </tbody>
   </table>
     </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+<br><br><br><br><br><br>
 
   <footer class="footer" style="background-color: #ff3232;" >
     <div class="container" >
