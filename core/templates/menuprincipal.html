@@ -22,7 +22,7 @@
 </head>
 <body>
   {%load static%}
-  <nav class="navbar navbar-expand-sm navbar-light fixed-top " style="background-color: #F94E4E">
+  <nav class="navbar navbar-expand-sm navbar-light " style="background-color: #F94E4E">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,9 +54,54 @@
         <span2 style="width: 30px; height: 30px; line-height: 30px; background: none; display: block; color: grey;"><i class="fas fa-moon"></i></span2>
       </button>
      
+  </div>
+</nav>
+
+<div class="container-md" >
+  <div id="carousel1" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel1" data-slide-to="1"></li>
+      <li data-target="#carousel1" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <br>
+        <img class="d-block w-100" src="{% static 'img/noticias.webp'%}" width=100% alt="">
+          <div class="carousel-caption">
+            <h3>Noticias de calidad</h3>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <br>
+          <img class="d-block w-100" src="{% static 'img/noticiasmundo.jpg'%}" width=100% alt="">
+          <div class="carousel-caption">
+            <h3>Noticias de ultima hora</h3>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <br>
+          <img class="d-block w-100" src="{% static 'img/fake-news2.jpg'%}" width=100% alt="">
+          <div class="carousel-caption">
+            <h3>Noticias totalmente transparentes</h3>
+          </div>
+      </div>
     </div>
-  </nav>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel1" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+
+
+
+
+<br><br><br><br><br><br><br><br>
 
   <footer class="footer" style="background-color: #ff3232;" >
     <div class="container" >

@@ -15,8 +15,12 @@
 
     function modark(){
     document.body.classList.toggle('dark');
-    document.getElementById('tarjetas').classList.toggle('cardd');
-    document.getElementById('tarjetas1').classList.toggle('cardd');
+    document.getElementById('tarjetas1').classList.toggle('cardd')
+    document.getElementById('tarjetas2').classList.toggle('cardd')
+    document.getElementById('tarjetas3').classList.toggle('cardd')
+    document.getElementById('tarjetas4').classList.toggle('cardd')
+    document.getElementById('tarjetas5').classList.toggle('cardd')
+    document.getElementById('tarjetas6').classList.toggle('cardd')
     }    
   </script>
 </head>
@@ -56,7 +60,120 @@
      
     </div>
   </nav>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="container"><br><br><br>     
+  
+
+    <br><br>
+    <div class="center">   
+      <div class="row">       
+        <div class="col-md">        
+            <div class="card" id="tarjetas1" name="tarjetass">
+              <div class="container">
+              <figure>              
+              <img class="card-img-top" src="{% static 'img/informacion.png'%}" width="480" height="360">
+              <div class="capa">
+                <h3>Información </h3>
+                <p>Nosotros como empresa queremos comprometernos a poder entregar a nuestros usuarios toda noticia relevante del momento </p>
+              </div>
+              </figure><br>            
+              <div class="card-body" id="tarjetas" name="tarjetass">
+                <h2 class="card-title"></h2>
+                <p class="card-text">Información y noticias</p>
+              </div>
+            </div>          
+        </div>
+      </div>
+  
+        <div class="col-md">        
+          <div class="card" style="margin-top: 45%;" id="tarjetas2" name="tarjetass">
+            <div class="container">
+            <figure>
+            <img class="card-img-bottom" src="{% static 'img/estra.png'%}">   
+            <div class="capa">
+              <h3>Noticias</h3>
+              <p>Queremos proveer todas las noticias de último momento relacionadas a la actualidad </p>
+            </div>    
+            </figure>                 
+          </div>          
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+    <div class="center">   
+      <div class="row">       
+        <div class="col-md">        
+            <div class="card" id="tarjetas3" name="tarjetass">
+              <div class="container">
+                <figure>
+              <img class="card-img-top" src="{% static 'img/blo.png'%}"><br>  
+              <div class="capa">
+                <h3>Noticias de caracter mundial</h3>
+                <p>Entregaremos la informacion mas relevante en el mundo. </p>
+              </div>
+              </figure>          
+              <div class="card-body">
+                <h2 class="card-title">Calidad</h2>
+                <p class="card-text">Articulos utiles y de calidad.</p>
+              </div>
+            </div>          
+        </div>
+      </div>
+  
+        <div class="col-md">        
+          <div class="card" style="margin-top: 45%;" id="tarjetas4" name="tarjetass">
+            <div class="container">
+            <figure>
+            <img class="card-img-bottom" src="{% static 'img/noti.png'%}"> 
+            <div class="capa">
+              <h3>Noticias</h3>
+              <p>Las mejores noticias del momento se encontrarán disponibles en nuestra página para propagar la información verídica y de calidad. </p>
+            </div>
+            </figure>                        
+          </div>          
+      </div>
+    </div>
+  </div>
+    <br><br><br><br><br>
+    <div class="center">   
+      <div class="row">       
+        <div class="col-md">        
+            <div class="card" id="tarjetas5" name="tarjetass">
+              <div class="container">
+              <figure>
+              <img class="card-img-top" src="{% static 'img/bann.png'%}">
+              <div class="capa">
+                <h3>Servicio Transparente</h3>
+                <p>Procuramos entregar un buen servicio que genere buenos resultados alejados de las fake news  </p> 
+              </div>
+              </figure>
+              <br>            
+              <div class="card-body">
+                <h2 class="card-title"></h2>
+                <p class="card-text"> Todo tipo de noticias y utilidades.</p>
+              </div>
+            </div>          
+        </div>
+      </div>
+  
+        <div class="col-md">        
+          <div class="card" style="margin-top: 45%;" id="tarjetas6" name="tarjetass">
+            <div class="container">
+            <figure>
+            <img class="card-img-bottom" src="{% static 'img/info.jpg'%}">
+            <div class="capa">
+              <h3>Al alcance de tu mano</h3>
+              <p>Tips y utilidades que te brinden ayuda y faciliten tu experiencia.</p>
+            </div>
+            </figure>                        
+          </div>          
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
 
   <footer class="footer" style="background-color: #ff3232;" >
     <div class="container" >
